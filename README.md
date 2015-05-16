@@ -16,6 +16,10 @@ Once the daemon is started, an admin should deploy an SSL reverse proxy that pro
 
 In this mode, code changes will cause runtime reloads.
 
+To produce a jar suitable for production deployment, execute:
+
+    lein ring uberjar
+
 ## TODO:
 
 - Cache session so authentication step needn't be performed on each request
